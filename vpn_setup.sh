@@ -21,5 +21,7 @@ cp -rf ./xl2tpd.conf /etc/xl2tpd/xl2tpd.conf
 
 echo "copy options.xl2tpd.client"
 
-cp ./options.xl2tpd.client /etc/ppp/options.xl2tpd.client
-chmod 600 /etc/ppp/options.xl2tpd.client
+cp ./options.xl2tpd.client /etc/ppp/options.xl2tpd.myvpn
+cp ./options.xl2tpd.client /etc/ppp/options.xl2tpd.publicvpn
+chmod 600 /etc/ppp/options.xl2tpd.myvpn
+chmod 600 /etc/ppp/options.xl2tpd.publicvpn
