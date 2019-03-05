@@ -14,8 +14,10 @@ systemctl status strongswan xl2tpd
 echo "setting up ipsec transport"
 
 strongswan up myvpn
+# strongswan up publicvpn
 
 echo "connect to vpn server"
 
 echo "c myvpn" > /var/run/xl2tpd/l2tp-control
+# echo "c publicvpn" > /var/run/xl2tpd/l2tp-control
 
